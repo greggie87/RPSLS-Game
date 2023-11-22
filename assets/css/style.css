@@ -43,6 +43,10 @@ a {
 
 /* Game buttons */
 
+.options {
+    margin-bottom: 20px;
+}
+
 .button-area {
     word-spacing: 30px;
     margin-bottom: 50px;
@@ -81,6 +85,12 @@ a {
     float: right;
     padding-right: 100px;
 }
+
+.row {
+    font-size: 150%;
+}
+
+/* footer styling */
 
 footer {
     background-color: white;
