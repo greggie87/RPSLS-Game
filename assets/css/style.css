@@ -1,8 +1,9 @@
 /* General style */
 
 body {
-    background-color: rgb(86, 194, 221);
+    background-color: rgb(45, 135, 158);
     font-family: "Roboto", sans-serif;
+    font-size: 110%;
     color: #ffffff;
     text-align: center;
 }
@@ -10,13 +11,118 @@ body {
 /* Heading */
 
 .heading {
-    font-family: "Roboto", sans-serif;
     text-align: center;
-    font-size: 4.5rem;
+    font-size: 3rem;
     margin-bottom: 0;
 }
 
 .logo {
-    font-size: 4.5rem;
+    font-size: 3rem;
     letter-spacing: 10px;
+}
+
+/* Game area styling*/
+
+.game-area {
+    background-color: #ffffff;
+    box-sizing: border-box;
+    border-radius: 25px;
+    width: 90%;
+    height: 65vh;
+    max-height: 500px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.5%;
+    color: rgb(45, 135, 158);
+}
+
+/* Game buttons */
+
+.btn {
+    width: 70px;
+    height: 70px;
+    font-size: 250%;
+    color: rgb(45, 135, 158);
+    margin-top: 20px;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn--big {
+    padding-top: 10px;
+    border-radius: 50%;
+    background-color: white;
+    border: 10px solid;
+    width: 100px;
+    height: 100px;
+    font-size: 3.2rem;
+    margin: 0 30px;
+    transition: all 0.5s;
+}
+
+.btn--big::after {
+    content: attr(data-type);
+    font-size: 1rem;
+    color: #445361;
+    position: relative;
+    left: -0.5em;
+}
+
+.btn--blue {
+    border-color: blue;
+    color: blue;
+}
+
+.btn--blue:active,
+.btn--blue:hover {
+    background-color: darkblue;
+    color: white;
+}
+
+.btn--orange {
+    border-color: orange;
+    color: orange;
+}
+
+.btn--orange:active,
+.btn--orange:hover {
+    background-color: darkorange;
+    color: white;
+}
+
+.btn--red {
+    border-color: red;
+    color: red;
+}
+
+.btn--red:active,
+.btn--red:hover {
+    background-color: darkred;
+    color: white;
+}
+
+.btn--green {
+    border-color: green;
+    color: green;
+}
+
+.btn--green:active,
+.btn--green:hover {
+    background-color: darkgreen;
+    color: white;
+}
+
+.btn--gray {
+    margin-top: 25px;
+    background-color: #445361;
+    border: 1px transparent;
+    border-radius: 20px;
+}
+
+.btn--gray:active,
+.btn--gray:hover {
+    background-color: #0d1013;
 }
