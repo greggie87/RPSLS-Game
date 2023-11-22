@@ -60,8 +60,8 @@
           class="user-result game_image"
           src="assets/images/placeholder.png"
           alt="rock paper scissors lizard spock image"
-          width="230"
-          height="230"
+          width="210"
+          height="210"
         />
         <img
           class="vs"
@@ -75,27 +75,37 @@
           class="computer-result game_image"
           src="assets/images/placeholder.png"
           alt="rock paper scissors lizard spock image"
-          width="230"
-          height="230"
+          width="210"
+          height="210"
         />
       </div>
       <!-- scores area-->
-        <div class="player-score-tally">
-          <h1>Player Score:</h1>
-          <h2 id="userScore" class="score_keep">0</h2>
-        </div>
-        <div class="computer-score-tally">
-          <h1>Computer Score:</h1>
-          <h2 id="computerScore" class="score_keep">0</h2>
-        </div>
-      </span>
+      <div class="player-score-tally">
+        <h2 id="user" class="text_result">ROCK</h2>
+        <h1>Player Score:</h1>
+        <h2 id="userScore" class="score_keep">0</h2>
+      </div>
+      <div class="computer-score-tally">
+        <h2 id="computer" class="text_result">ROCK</h2>
+        <h1>Computer Score:</h1>
+        <h2 id="computerScore" class="score_keep">0</h2>
+      </div>
       <div class="row result">
         <span class="result_text" id="result"></span>
       </div>
+    
+      <div class="row">
+        <div id="game"></div>
+      </div>
     </div>
     <!-- Rules area -->
+    <div class="row game_count">
+        <div class="col-md-8">
+            Games Played: <span class="game_count_text" id="games"></span>
+        </div>
+    </div>
     <div>
-      <h1>Rules:</h1>
+      <h1 class="rulesTitle">Rules:</h1>
     </div>
     <div>
       <p>
@@ -114,6 +124,7 @@
         >
       </p>
     </div>
+
     <!-- footer -->
     <footer>Coded by Greg Reeds 2023</footer>
     <script src="assets/js/script.js"></script>

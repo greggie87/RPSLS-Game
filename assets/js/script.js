@@ -11,6 +11,8 @@
 // - Rock crushes Scissors
 
 // HTML WRITING VARIABLES
+var userText = document.getElementById("user");
+var computerText = document.getElementById("computer");
 var result = document.getElementById("result");
 var userScore = document.getElementById("userScore");
 var computerScore = document.getElementById("computerScore");
@@ -19,82 +21,114 @@ var html_cpu_image = document.getElementById("cpu_image");
 var num_games = document.getElementById("games");
 
 // SET THE USER AND COMPUTER VARIABLES      
-var computerChoices = ["r", "p", "s", "l", "sp"];
+var computerChoices = ["r", "p", "s", "l", "k"];
 var userScore_count = 0;
 var computerScore_count = 0;
 var num_games_count = 0;
 var userGuess;
 var computerGuess = function () { return computerChoices[Math.floor(Math.random() * computerChoices.length)]; };
 var computerReturn = function (play) {
-
+    var text;
     switch (play) {
         case "r":
+            text = "ROCK";
             html_cpu_image.src = "assets/images/rock.png";
             break;
         case "p":
+            text = "PAPER";
             html_cpu_image.src = "assets/images/paper.png";
             break;
         case "s":
+            text = "SCISSORS";
             html_cpu_image.src = "assets/images/scissors.png";
             break;
         case "l":
+            text = "LIZARD";
             html_cpu_image.src = "assets/images/lizard.png";
             break;
-        case "s":
+        case "k":
+            text = "SPOCK";
             html_cpu_image.src = "assets/images/spock.png";
-            break;
+            break;            
     }
     return text;
 };
 
 // USER PLAYS ROCK
+
 document.getElementById("rock").onclick = function () {
     userGuess = "r";
+    userText.textContent = "ROCK";
     html_user_image.src = "assets/images/rock.png";
     console.log(computerGuess());
+
     let play = computerGuess();
+    computerText.textContent = computerReturn(play);
+
     return game(userGuess, play);
 };
 
 // USER PLAYS PAPER
+
 document.getElementById("paper").onclick = function () {
     userGuess = "p";
+    userText.textContent = "PAPER";
     html_user_image.src = "assets/images/paper.png";
     console.log(computerGuess());
+
     let play = computerGuess();
+    computerText.textContent = computerReturn(play);
+
     return game(userGuess, play);
 };
 
 // USER PLAYS SCISSORS
+
 document.getElementById("scissors").onclick = function () {
     userGuess = "s";
+    userText.textContent = "SCISSORS";
     html_user_image.src = "assets/images/scissors.png";
     console.log(computerGuess());
+
     let play = computerGuess();
+    computerText.textContent = computerReturn(play);
+
     return game(userGuess, play);
 };
 
-// USER PLAYS LIZZARD
+// USER PLAYS LIZARD
+
 document.getElementById("lizard").onclick = function () {
-    userGuess = "l";
+    userGuess = "p";
+    userText.textContent = "LIZARD";
     html_user_image.src = "assets/images/lizard.png";
     console.log(computerGuess());
+
     let play = computerGuess();
+    computerText.textContent = computerReturn(play);
+
     return game(userGuess, play);
 };
 
 // USER PLAYS SPOCK
+
 document.getElementById("spock").onclick = function () {
-    userGuess = "sp";
+    userGuess = "k";
+    userText.textContent = "SPOCK";
     html_user_image.src = "assets/images/spock.png";
     console.log(computerGuess());
+
     let play = computerGuess();
+    computerText.textContent = computerReturn(play);
+
     return game(userGuess, play);
 };
 
-// RUNNING THE GAME CONDITIONS
+// THIS FUNCTION RUNS THE GAME CONDITIONS
 
 let game = function (user, computer) {
+    num_games_count++;
+    num_games.textContent = num_games_count;
 
     if (user == computer) {
         result.textContent = "Tie!";
@@ -116,7 +150,7 @@ let game = function (user, computer) {
             computerScore_count = computerScore_count + 1;
             result.textContent = "LOSS";
             result.style = "color: rgb(243, 102, 82)";
-        } else if (computer == "sp") {
+        } else if (computer == "k") {
             computerScore_count = computerScore_count + 1;
             result.textContent = "LOSS";
             result.style = "color: rgb(243, 102, 82)";
@@ -128,7 +162,7 @@ let game = function (user, computer) {
             result.textContent = "WIN";
             result.style = "color: rgb(99, 189, 187)";
             console.log(userScore_count);
-        } else if (computer == "sp") {
+        } else if (computer == "k") {
             userScore_count = userScore_count + 1;
             result.textContent = "WIN";
             result.style = "color: rgb(99, 189, 187)";
@@ -158,14 +192,14 @@ let game = function (user, computer) {
             computerScore_count = computerScore_count + 1;
             result.textContent = "LOSS";
             result.style = "color: rgb(243, 102, 82)";
-        } else if (computer == "sp") {
+        } else if (computer == "k") {
             computerScore_count = computerScore_count + 1;
             result.textContent = "LOSS";
             result.style = "color: rgb(243, 102, 82)";
         }
 
     } else if (user == "l") {
-        if (computer == "sp") {
+        if (computer == "k") {
             userScore_count = userScore_count + 1;
             result.textContent = "WIN";
             result.style = "color: rgb(99, 189, 187)";
@@ -185,7 +219,7 @@ let game = function (user, computer) {
             result.style = "color: rgb(243, 102, 82)";
         }
 
-    } else if (user == "sp") {
+    } else if (user == "k") {
         if (computer == "s") {
             userScore_count = userScore_count + 1;
             result.textContent = "WIN";
@@ -207,7 +241,6 @@ let game = function (user, computer) {
         }
 
     }
-
     userScore.textContent = userScore_count;
     computerScore.textContent = computerScore_count;
 };

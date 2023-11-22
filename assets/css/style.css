@@ -78,7 +78,7 @@ a {
 
 .player-score-tally {
     float: left;
-    padding-left: 100px;
+    padding-left: 110px;
 }
 
 .computer-score-tally {
@@ -88,6 +88,16 @@ a {
 
 .row {
     font-size: 150%;
+}
+
+.text_result {
+    color: black;
+}
+
+/* Rules */
+
+.rulesTitle {
+    text-decoration: underline;
 }
 
 /* footer styling */
