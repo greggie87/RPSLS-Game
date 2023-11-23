@@ -229,11 +229,6 @@ footer {
         font-size: 1.5rem;
     }
 
-    .options {
-        scale: 75%;
-        margin-bottom: 0;
-    }
-
     .result_text {
         font-size: 95%;
     }
@@ -295,11 +290,6 @@ footer {
 
     .game-area-text {
         font-size: 75%;
-    }
-
-    .options {
-        scale: 70%;
-        margin-bottom: 0;
     }
 
     .result_text {
