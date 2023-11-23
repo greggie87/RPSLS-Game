@@ -99,7 +99,7 @@ document.getElementById("scissors").onclick = function () {
 // USER PLAYS LIZARD
 
 document.getElementById("lizard").onclick = function () {
-    userGuess = "p";
+    userGuess = "l";
     userText.textContent = "LIZARD";
     html_user_image.src = "assets/images/lizard.png";
     console.log(computerGuess());
