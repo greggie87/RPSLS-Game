@@ -289,7 +289,7 @@ footer {
     }
 
     .game-area {
-        max-height: fit-content;
+        max-height: 550px;
         padding: 0;
     }
 
