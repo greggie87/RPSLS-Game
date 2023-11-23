@@ -124,7 +124,7 @@ document.getElementById("spock").onclick = function () {
     return game(userGuess, play);
 };
 
-// THIS FUNCTION RUNS THE GAME CONDITIONS
+// FUNCTION RUNS THE GAME CONDITIONS
 
 let game = function (user, computer) {
     num_games_count++;

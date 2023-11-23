@@ -1,39 +1,34 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Rock Paper Scissors Lizard Spock Web Game
 
-Welcome,
+[-> Link to live site here <-](https://greggie87.github.io/RPSLS-Game/)
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+Rock Paper Scissors Lizard Spock is a great adaptation of the classic game 'Rock Paper Scissors'. The game helps people to make descisions but with extra variables giving a much more random result. People who are friendly with each other are likely to draw when playing rock paper scissors. This version of the game is played against the computer. The computer always picks at random so the results are infinitely variable.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
+The site is targetted at people of all ages and will help the user to understand the rules of the game as well as helping with potentially important descision making.
 
-## Codeanywhere Reminders
+[-> Link to live site here <-](https://greggie87.github.io/RPSLS-Game/)
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+![Responsive Mockup Of Site](assets/images/readme/responsive.JPG)
 
-`python3 -m http.server`
+## Features
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+### Existing Features
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+- __Header__
 
-`http_server`
+  - The header is large and at the top of the page. It shows the name of the game 'Rock Paper Scissors Spock'.
+  - The font chosen for the title is 'Roboto' via Google Fonts. This was chosen as it is a little more informal, adding to the fun and playfulness of the game. This font is used throughout the page.
+  - The header also includes icons of all the game options to act as a logo.
+  - The header is fully responsive to all screen sizes so that it always stays on one line.
+  
+![Header](assets/images/readme/header.JPG)
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+- __Game Options__
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+  - The game options are clearly indicated in order to start the game.
+  - The five options are shown as icons within buttons representing rock, paper, scissors or spock. These are of good size in order to be pressed/clicked easily.
+  - The buttons each have aria-label decriptions to help with accessibility.
+  
+![Game Options](assets/images/readme/game-options.JPG)
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
 
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
-
----
-
-Happy coding!
