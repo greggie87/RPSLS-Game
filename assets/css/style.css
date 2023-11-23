@@ -200,6 +200,10 @@ footer {
         font-size: 60%;
     }
 
+    .rules-area {
+        font-size: 93%;
+    }
+
 
 }
 
@@ -254,6 +258,10 @@ footer {
     .computer-score-tally {
         padding-right: 25px;
         font-size: 50%;
+    }
+
+    .rules-area {
+        font-size: 85%;
     }
 
 
@@ -315,5 +323,9 @@ footer {
     .computer-score-tally {
         padding-right: 10px;
         font-size: 35%;
+    }
+
+    .rules-area {
+        font-size: 75%;
     }
 }
