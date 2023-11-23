@@ -29,7 +29,7 @@ a {
 
 .game-area {
     background-color: #ffffff;
-    box-sizing: border-box;
+    box-sizing: content-box;
     border-radius: 25px;
     width: 90%;
     height: 65vh;
@@ -279,7 +279,7 @@ footer {
 
 }
 
-@media (max-width: 426px) {
+@media (max-width: 479px) {
     .heading {
         font-size: 1rem;
     }
