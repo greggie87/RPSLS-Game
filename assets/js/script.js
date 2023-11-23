@@ -49,7 +49,7 @@ var computerReturn = function (play) {
         case "k":
             text = "SPOCK";
             html_cpu_image.src = "assets/images/spock.png";
-            break;            
+            break;
     }
     return text;
 };
