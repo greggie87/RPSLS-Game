@@ -33,7 +33,7 @@ a {
     border-radius: 25px;
     width: 90%;
     height: 65vh;
-    max-height: 600px;
+    max-height: 650px;
     max-width: 950px;
     margin-left: auto;
     margin-right: auto;
@@ -47,11 +47,6 @@ a {
     margin-bottom: 20px;
 }
 
-.button-area {
-    word-spacing: 30px;
-    margin-bottom: 50px;
-}
-
 .btn {
     width: 70px;
     height: 70px;
@@ -60,10 +55,13 @@ a {
     margin-top: 20px;
 }
 
-/* game result area */
+/* Game result area */
 
 .vs {
-    padding-top: 60px;
+    padding-top: 55px;
+    padding-bottom: 55px;
+    height: 100px;
+    width: 100px;
 }
 
 .user-result {
@@ -78,7 +76,7 @@ a {
 
 .player-score-tally {
     float: left;
-    padding-left: 110px;
+    padding-left: 100px;
 }
 
 .computer-score-tally {
@@ -86,12 +84,17 @@ a {
     padding-right: 100px;
 }
 
-.row {
-    font-size: 150%;
+.result_text {
+    font-size: 160%;
 }
 
 .text_result {
     color: black;
+}
+
+.game_image {
+    width: 210px;
+    height: 210px;
 }
 
 /* Rules */
@@ -100,10 +103,217 @@ a {
     text-decoration: underline;
 }
 
-/* footer styling */
+/* Footer styling */
 
 footer {
     background-color: white;
     color: rgb(45, 135, 158);
     margin-top: 70px;
+}
+
+/* Media queries */
+
+@media (max-width: 900px) {
+    .heading {
+        font-size: 2rem;
+    }
+
+    .logo {
+        font-size: 2rem;
+    }
+
+    .result_text {
+        font-size: 130%;
+    }
+
+    .game-area {
+        max-height: 570px;
+    }
+
+    .vs {
+        height: 75px;
+        width: 75px;
+    }
+
+    .user-result {
+        padding-left: 50px;
+    }
+
+    .computer-result {
+        padding-right: 50px;
+    }
+
+    .game_image {
+        width: 180px;
+        height: 180px;
+    }
+
+
+    .player-score-tally {
+        padding-left: 50px;
+        font-size: 75%;
+    }
+
+    .computer-score-tally {
+        padding-right: 50px;
+        font-size: 75%;
+    }
+
+
+}
+
+@media (max-width: 645px) {
+    .result_text {
+        font-size: 110%;
+    }
+
+    .game-area {
+        max-height: 510px;
+    }
+
+    .vs {
+        height: 50px;
+        width: 50px;
+    }
+
+    .user-result {
+        padding-left: 25px;
+    }
+
+    .computer-result {
+        padding-right: 25px;
+    }
+
+    .game_image {
+        width: 160px;
+        height: 160px;
+    }
+
+
+    .player-score-tally {
+        padding-left: 25px;
+        font-size: 60%;
+    }
+
+    .computer-score-tally {
+        padding-right: 25px;
+        font-size: 60%;
+    }
+
+
+}
+
+
+@media (max-width: 500px) {
+    .heading {
+        font-size: 1.5rem;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    .options {
+        scale: 75%;
+        margin-bottom: 0;
+    }
+
+    .result_text {
+        font-size: 95%;
+    }
+
+    .game-area {
+        max-height: 480px;
+        padding: 0;
+    }
+
+    .vs {
+        height: 40px;
+        width: 40px;
+    }
+
+    .user-result {
+        padding-left: 15px;
+    }
+
+    .computer-result {
+        padding-right: 15px;
+    }
+
+    .game_image {
+        width: 120px;
+        height: 120px;
+    }
+
+
+    .player-score-tally {
+        padding-left: 25px;
+        font-size: 50%;
+    }
+
+    .computer-score-tally {
+        padding-right: 25px;
+        font-size: 50%;
+    }
+
+
+}
+
+@media (max-width: 426px) {
+    .heading {
+        font-size: 1rem;
+    }
+
+    .logo {
+        font-size: 1rem;
+    }
+
+    .game-area {
+        max-height: 480px;
+        padding: 0;
+    }
+
+    .game-area-text {
+        font-size: 75%;
+    }
+
+    .options {
+        scale: 70%;
+        margin-bottom: 0;
+    }
+
+    .result_text {
+        font-size: 85%;
+    }
+
+    .vs {
+        height: 35px;
+        width: 35px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .user-result {
+        padding-left: 5px;
+    }
+
+    .computer-result {
+        padding-right: 5px;
+    }
+
+    .game_image {
+        width: 100px;
+        height: 100px;
+    }
+
+
+    .player-score-tally {
+        padding-left: 10px;
+        font-size: 35%;
+    }
+
+    .computer-score-tally {
+        padding-right: 10px;
+        font-size: 35%;
+    }
 }
